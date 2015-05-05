@@ -1,0 +1,34 @@
+{
+  "name": "organizer",
+  "version": "0.0.0",
+  "description": "Data Definition & Property Type Organization",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "lodash": "^3.8.0"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0",
+    "babel": "^5.2.15"
+  },
+  "scripts": {
+    "test": "node-babel tests/index.js",
+    "dev": "rm -rf ./lib && babel -w --loose=all src/ --out-dir lib/ --source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knex/organizer.git"
+  },
+  "keywords": [
+    "knex",
+    "ddl"
+  ],
+  "author": "Tim Griesser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knex/organizer/issues"
+  },
+  "homepage": "https://github.com/knex/organizer"
+}
